@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✈ Travel Budget Calculator"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan your trip expenses"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:paddingBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edtDestination"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination (e.g. Manali)"
+            android:inputType="textCapWords"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edtDistance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Distance (KM)"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edtTravellers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Travellers"
+            android:inputType="number"
+            android:text="1"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edtBudget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Total Budget (₹)"
+            android:inputType="numberDecimal"
+            android:padding="12dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trip Expenses"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/edtTransport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Transport Cost (₹)"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edtHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hotel / Accommodation Cost (₹)"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edtFood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Food Cost (₹)"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edtActivities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Activities / Sightseeing Cost (₹)"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:padding="12dp" />
+
+        <EditText
+            android:id="@+id/edtOther"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Other Expenses (₹)"
+            android:inputType="numberDecimal"
+            android:text="0"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE TRAVEL BUDGET"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="#E8F5E9">
+
+            <TextView
+                android:id="@+id/txtDestination"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination: -"
+                android:textSize="17sp"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/txtTotalCost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Trip Cost: ₹0"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/txtPerPerson"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Per Person Cost: ₹0"
+                android:textSize="18sp"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/txtRemaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Budget Remaining: ₹0"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="6dp" />
+
+            <TextView
+                android:id="@+id/txtDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Distance: 0 KM"
+                android:textSize="16sp"
+                android:padding="6dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
